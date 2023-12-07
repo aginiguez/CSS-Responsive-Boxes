@@ -1,3 +1,79 @@
-body {
-  background: peachpuff;
+ody {
+  background: rgb(3, 3, 3);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(153, 6, 239);
+  height: 98vh;
+
+}
+
+.a, .b, .c, .d, .e, .f, .g, .h {
+  border: solid 0.1em rgb(6, 6, 6);
+  background-color: rgb(113, 201, 252);
+  padding: 1em;
+  flex-grow: 1;
+  font-family: 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.a{
+  flex-grow: 1;
+  flex-basis: 100%;
+  margin: 15px 15px 10px 10px;
+}
+
+.b, .c, .d {
+  flex-basis: 20%;
+  margin: 10px;
+  
+  
+}
+
+.e, .f, .g {
+  flex-basis: 20%;
+  margin: 10px;
+  
+}
+
+.h{
+  margin: 10px 15px 10px;
+}
+
+.container-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 67%;
+  min-height: 30vh;
+}
+
+
+@media (max-width: 600px){
+  .container-1{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-2{
+    display: flex;
+    flex-basis: 100%;
+  }
+
+  .b, .c, .d {
+    flex-basis: 20%;
+    
+  }
+  
+  .e, .f, .g {
+    flex-basis: 20%;
+    
+  }
+  .container-2{
+    min-height: 45vh;
+  }
 }
